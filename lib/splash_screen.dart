@@ -1,10 +1,12 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_navitagor_anim/right_back.dart';
 
 import 'bezier_line.dart';
+import 'draggable_demo.dart';
 
 class SplashScreen extends StatefulWidget {
   @override
-  _SplashScreenState createState() => _SplashScreenState();   
+  _SplashScreenState createState() => _SplashScreenState();
 }
 
 class _SplashScreenState extends State<SplashScreen>
@@ -23,7 +25,7 @@ class _SplashScreenState extends State<SplashScreen>
       if (state == AnimationStatus.completed) {
         Navigator.pushAndRemoveUntil(
             context,
-            MaterialPageRoute(builder: (context) => BezierLineDemo()),
+            MaterialPageRoute(builder: (context) => DraggableDemo()),
             (route) => route == null);
       }
     });
