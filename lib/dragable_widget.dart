@@ -33,7 +33,7 @@ class _DraggableWidgetState extends State<DraggableWidget> {
           color: widget.widgetColor,
         ),
         feedback: Container(
-          width: 110,
+          width: 110,   
           height: 110,
           color: widget.widgetColor.withOpacity(0.5),
         ),
